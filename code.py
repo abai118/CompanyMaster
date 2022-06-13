@@ -63,7 +63,7 @@ def BarPlotOfCompanyRegistrationByYear():
             yeardict[year] = 1
 
     # print(yeardict)
-    plt.bar(yeardict.keys(), yeardict.values())
+    plt.barh(list(yeardict.keys()), list(yeardict.values()))
     plt.gcf().autofmt_xdate()
     plt.show()
 
@@ -150,9 +150,9 @@ def GroupedBarPlot():
 def main():
 
     # HistogramOfAuthorizedCap()
-    # BarPlotOfCompanyRegistrationByYear()
+    BarPlotOfCompanyRegistrationByYear()
     # CompanyRegistrationInTheYear2015ByTheDistrict()
-    GroupedBarPlot()
+    # GroupedBarPlot()
 
 
 main()
